@@ -4,7 +4,7 @@
 
 > Simple `allOf`, `oneOf` and `mixOf` methods.
 
-Utilitary library for implementing `allOf` and `oneOf` methods.
+Utilitary library containing methods for testings collections.
 
 ## Install
 
