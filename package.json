@@ -10,7 +10,8 @@
   "repository": "https://github.com/jotaajunior/ts-package-template.git",
   "author": "Jota <jjunior@protonmail.ch>",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc"
   },
   "np": {
     "message": "chore: releases v%s"
