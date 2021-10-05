@@ -1,6 +1,7 @@
 # allone
 
 ![](https://img.shields.io/badge/license-MIT-green)
+[![codecov](https://codecov.io/gh/jotaajunior/allone/branch/main/graph/badge.svg?token=S0PI1DT4UA)](https://codecov.io/gh/jotaajunior/allone)
 
 > Simple `allOf`, `oneOf` and `mixOf` methods.
 
