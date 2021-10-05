@@ -1,8 +1,16 @@
 # allone
 
-> Simple `allOf` and `oneOf` methods.
+![](https://img.shields.io/badge/license-MIT-green)
+
+> Simple `allOf`, `oneOf` and `mixOf` methods.
 
 Utilitary library for implementing `allOf` and `oneOf` methods.
+
+## Install
+
+```
+$ yarn add allone
+```
 
 ## Usage
 
@@ -14,11 +22,13 @@ import { oneOf, allOf, mixOf } from 'allone'
 
 ## `oneOf`
 
+`oneOf` accepts an array of options and returns an object with a `test` function that returns `true` if at least one of options are present in the input.
+
 ```ts
 const one = oneOf(1, 2, 3)
 ```
 
-Variable `one` will be valid if input contains `1`, `2` **OR** `3`.
+`one.test` will return true input contains `1`, `2` **OR** `3`.
 
 ```ts
 valid.test([1]) // true
@@ -29,11 +39,14 @@ valid.test([-1, 0, 4, 5]) // false
 
 ## `allOf`
 
+`allOf` accepts an array of requirements and returns an object with a `test` function that returns `true` if all requirements are present in the input.
+
+
 ```ts
 const all = allOf(1, 2, 3)
 ```
 
-Will return true if the input contains `1`, `2` **AND** `3`.
+`all.test` will return true if the input contains `1`, `2` **AND** `3`.
 
 ```ts
 all.test([1]) // false
@@ -52,4 +65,10 @@ const mix = mixOf(
 )
 ```
 
-`mix` will return true for any input that contains `1` and contains `4`, `5` and `6`.
+`mix.test` will return true for any input that contains `1` and contains `4`, `5` and `6`.
+
+---
+
+<div align="center">
+  Made with ❤ by <a href="https://github.com/jotaajunior">Jota</a>.
+</div>
