@@ -10,7 +10,7 @@ Utilitary library containing methods for testings collections.
 ## Install
 
 ```
-$ yarn add allone
+$ yarn add pick-of
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ $ yarn add allone
 ## Importing
 
 ```ts
-import { oneOf, allOf, mixOf } from 'allone'
+import { oneOf, allOf, mixOf } from 'pick-of'
 ```
 
 ## `oneOf`
