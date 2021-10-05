@@ -32,10 +32,10 @@ const one = oneOf(1, 2, 3)
 `one.test` will return true input contains `1`, `2` **OR** `3`.
 
 ```ts
-valid.test([1]) // true
-valid.test([1, 8, 63]) // true
-valid.test([4, 5, 6]) // false
-valid.test([-1, 0, 4, 5]) // false
+one.test([3]) // true
+one.test([42, 1, 63]) // true
+one.test([4, 5, 6]) // false
+one.test([-1, 0, 4, 2]) // true
 ```
 
 ## `allOf`
