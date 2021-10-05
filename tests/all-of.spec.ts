@@ -1,6 +1,6 @@
 import { allOf } from '../src'
 
-describe('One of', () => {
+describe('All of', () => {
   it('Should return true for valid input', () => {
     const results = [
       [1, 2, 3],
