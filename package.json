@@ -3,7 +3,7 @@
   "description": "Utilitary library containing methods for testings collections",
   "version": "0.0.0",
   "files": [
-    "src"
+    "dist"
   ],
   "main": "./dist/index.js",
   "exports": "./dist/index.js",
